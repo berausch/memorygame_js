@@ -1,6 +1,5 @@
 $(document).ready(function() {
-  $("form").submit(function(event) {
-    event.preventDefault();
+  $("form").click(function() {
     var cardPosition = $(this.card).val();
     console.log(cardPosition);
   });
