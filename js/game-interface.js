@@ -1,10 +1,7 @@
-
-
 $(document).ready(function() {
-  $("button").submit(function(event) {
+  $("form").submit(function(event) {
     event.preventDefault();
-    var cardPosition = $(this).val();
-    $(".out").text("<p>" + cardPosition + "</p>");
+    var cardPosition = $(this.card).val();
     console.log(cardPosition);
-  })
+  });
 });
